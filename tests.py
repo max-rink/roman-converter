@@ -22,10 +22,10 @@ class TestMain(unittest.TestCase):
         self.assertEqual(900, main.convert_roman_to_int('CM'))
 
     def test_parsing_units(self):
-        self.assertEqual(['I','I'], main.unitparser('II'))
-        self.assertEqual(['XL','IX'], main.unitparser('XLIX'))
-        self.assertEqual(['X','X','I'], main.unitparser('XXI'))
-        self.assertNotEqual(['I','V'], main.unitparser('IV'))
+        self.assertEqual(['I','I'], main.parse_roman_number_to_units('II'))
+        self.assertEqual(['XL','IX'], main.parse_roman_number_to_units('XLIX'))
+        self.assertEqual(['X','X','I'], main.parse_roman_number_to_units('XXI'))
+        self.assertNotEqual(['I','V'], main.parse_roman_number_to_units('IV'))
 
     def test_convert_roman_to_int(self):
         # 0
@@ -39,3 +39,4 @@ class TestMain(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
