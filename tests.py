@@ -30,7 +30,10 @@ class TestMain(unittest.TestCase):
     def test_convert_roman_to_int(self):
         # 0
         data = ''
-        result = main.convert_roman_to_int(data)
+        result = main.convert_ro
+
+        q
+        man_to_int(data)
         self.assertEqual(0, result)
 
         self.test_roman_single_digit()
